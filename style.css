@@ -1,0 +1,171 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #fff8e1, #c2b497); /* Coffee and cream background */
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* YOUR ORIGINAL HEADER kept same */
+  header {
+    background-color: #d3a87e; /* Light Coffee */
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    color: #7e4b3e; /* Dark Coffee */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  header h1:hover {
+    transform: scale(1.1);
+  }
+  
+  header nav {
+    margin-top: 10px;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  header nav a:hover {
+    color: #7e4b3e; /* Dark Coffee on hover */
+    transform: scale(1.1);
+  }
+  
+  /* Main Section */
+  main {
+    flex-grow: 1;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.8em;
+    color: #7e4b3e; /* Dark Coffee */
+    margin-bottom: 30px;
+    animation: fadeInDown 1s ease forwards;
+  }
+  
+  @keyframes fadeInDown {
+    0% {opacity: 0; transform: translateY(-20px);}
+    100% {opacity: 1; transform: translateY(0);}
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background: rgba(255, 255, 255, 0.8);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    font-size: 17px;
+    color: #555;
+  }
+  
+  ul li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(to right, #c2b497, #d3a87e); /* Coffee and cream gradient */
+    color: #333;
+    font-size: 16px;
+    margin-top: 40px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #7e4b3e; /* Dark Coffee */
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  footer a:hover {
+    color: #c2b497; /* Light Coffee on hover */
+  }
+  
+  /* Scroll Top Button */
+  button#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: linear-gradient(to right, #7e4b3e, #d3a87e); /* Dark to Light Coffee Gradient */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  button#topBtn:hover {
+    background: linear-gradient(to right, #7e4b3e, #c2b497); /* Coffee Gradient on hover */
+    transform: scale(1.1);
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 14px;
+    border: 2px solid #d3a87e; /* Light Coffee */
+    border-radius: 15px;
+    background: #fff8e1; /* Light Cream */
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #7e4b3e; /* Dark Coffee */
+  }
+  
+  .contact-form button {
+    padding: 14px;
+    background: linear-gradient(to right, #7e4b3e, #d3a87e); /* Dark to Light Coffee Gradient */
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background: linear-gradient(to right, #7e4b3e, #c2b497); /* Coffee Gradient on hover */
+    transform: translateY(-3px);
+  }
+  
